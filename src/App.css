@@ -1,0 +1,77 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #03024a;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px 30px;
+}
+
+.nav-link:hover {
+  /* text-decoration: underline; */
+  color: rgb(29, 29, 250);
+}
+
+main {
+  padding-top: 0px; /* Add top padding to avoid content being hidden under the navbar */
+}
+
+section {
+  padding: 20px 10px;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+
+.CInfo {
+  list-style: none;
+  padding: 0;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 24px; /* Adjust the size as needed */
+  margin-right: 10px;
+}
+
+.selected-link {
+  color: rgb(29, 29, 250);
+  font-weight: bold;
+  margin: 15px 30px; 
+  text-decoration: none;
+}
+
+
+
+#about {
+  background-color: #1e3a8a;;
+}
+
+#projects, #skills, #contact {
+  background-color: #1e3a8a;;
+}

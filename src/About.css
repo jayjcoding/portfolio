@@ -1,0 +1,74 @@
+/* About.css */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e3a8a; /* A more appealing shade of blue */
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .head-container {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 80%;
+  }
+  
+  .image-container {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 50%; /* Make the image round */
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Default font size */
+    width: 70%;
+  }
+  
+  .info-container p {
+    margin: 10px 0; /* Add margin between paragraphs */
+  }
+  
+  /* Additional styling for better visual appeal */
+  .about-container h2 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .info-container p {
+    line-height: 1.6; /* Better line spacing for readability */
+    font-size: 1.1rem; /* Slightly larger font size */
+  }
+  
+  .box-container {
+    background: rgba(255, 255, 255, 0.1); /* Slight background for better readability */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+  }
+  
