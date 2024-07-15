@@ -32,7 +32,7 @@ body {
 }
 
 .info-container {
-  flex: 0 0 70%; /* Takes up 60% of the width */
+  flex: 0 1 70%; /* Takes up 60% of the width */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +41,7 @@ body {
   padding: 10px;
   box-sizing: border-box;
   color: white;
+  flex-wrap: wrap;
 }
 
 .info-container h2 {
@@ -51,4 +52,38 @@ body {
 .info-container p {
   margin-top: 1rem;
   font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .model-container, .info-container {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .info-container {
+    padding: 20px;
+  }
+
+  .info-container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .info-container p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .info-container h2 {
+    font-size: 2rem;
+  }
+
+  .info-container p {
+    font-size: 1.2rem;
+  }
 }

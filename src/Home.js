@@ -27,7 +27,12 @@ function Home() {
             </div>
             <div className="info-container">
                 <h2>Hello! This is Jay Jashnani</h2>
-                <p>I am an aspiring Software Developer.</p>
+                <p>I am an aspiring Software Developer </p>
+                    {/* <ul class="dynamicText">
+                        <li><span>Web Developer</span></li>
+                        <li><span>Software Engineer</span></li>
+                        <li><span>Product Developer</span></li>
+                    </ul> */}
             </div>
         </div>
     );

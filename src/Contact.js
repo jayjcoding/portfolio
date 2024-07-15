@@ -50,6 +50,8 @@ const Contact = () => {
   };
 
   return (
+    <div className='head-container'>
+    <h2 className='heading'> Contact Me</h2>
     <div className="contact-container">
       <div class="contactinfo">
         <h4> Contact Info</h4>
@@ -71,11 +73,29 @@ const Contact = () => {
               jayjashnani@gmail.com</a>
             </span>
           </li>
+          <li className="info-item">
+            <div className="icon">
+              <i className="fab fa-linkedin"></i>
+            </div>
+            <span><a href="https://www.linkedin.com/in/jay-jashnani-6a066a219/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+          </li>
+          <li className="info-item">
+            <div className="icon">
+              <i className="fab fa-github"></i>
+            </div>
+            <span><a href="https://github.com/jayjcoding" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+          </li>
+          <li className="info-item">
+            <div className="icon">
+              <i className="fab fa-code"></i>
+            </div>
+            <span><a href="https://leetcode.com/jay_coding" target="_blank" rel="noopener noreferrer">LeetCode</a></span>
+          </li>
         </ul>
       </div>
 
       <div class="contactme">
-        <h4>Contact Me</h4>
+        <h4>Send a Message</h4>
         {submitted ? (
           <div className="success-message">Thank you for your message!</div>
         ) : (
@@ -116,6 +136,7 @@ const Contact = () => {
           </form>
         )}
       </div>
+    </div>
     </div>
   );
 };

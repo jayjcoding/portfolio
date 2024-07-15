@@ -1,0 +1,111 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e3a8a; /* A more appealing shade of blue */
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    /* margin-bottom: 50px; */
+  }
+
+  .head-container {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .head-container h2 {
+    font-size:2rem;
+    margin-bottom: 20px;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+
+  .video-container {
+    /* width: 60%; */
+    flex: 0 1 30%;
+    padding: 10px;
+  }
+
+  /* .video-container iframe {
+  width: 100%;
+  
+  } */
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Default font size */
+    flex: 0 1 70%;
+  }
+  
+  .info-container p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 1.1rem; 
+  }
+
+  .title-container{
+    width: 100%;
+    text-align: center;
+  }
+  .skills{
+    display: flex;
+    /* flex-direction: row;; */
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .skill-button{
+    background-color: #03024a;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  .skill-button:hover{
+    background-color: #1e3a8a;
+  }
+
+  .title-container a{
+    font-size: 1.25rem;
+    color: white;
+  }
+
+  .title-container a:hover{
+    color: lightgray;
+  }
+
+  @media (max-width: 768px) {
+    .box-container {
+      flex-direction: column; 
+    }
+    
+    .video-container, .info-container {
+      width: 100%; 
+    }
+}

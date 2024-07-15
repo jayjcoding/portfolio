@@ -9,6 +9,15 @@ import { useState } from 'react';
 import './App.css'; 
 function App() {
 
+  const downloadFile = () => {
+    const link = document.createElement('a');
+    link.href = './Jay Jashnani_Resume.pdf'; 
+    link.download = 'Jay_Jashnani_Resume.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const [selectedSection, setSelectedSection] = useState('Home');
   return (
     <div className="App">
@@ -24,6 +33,9 @@ function App() {
           onClick={() => setSelectedSection('Skills')}>Skills</a>
           <a href="#contact" className={selectedSection === 'Contact' ? 'selected-link' : 'nav-link'}
           onClick={() => setSelectedSection('Contact')}>Contact Me</a>
+          <div className='navbar-right'>
+            <button className='resume-button' onClick={downloadFile}>Resume</button> 
+          </div>
         </nav>
       </header>
       <main>

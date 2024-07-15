@@ -7,7 +7,7 @@ function About() {
             <div className="head-container"><h2>About Me</h2></div>
             <div className='box-container'>
                 <div className="image-container">
-                    <img src="https://via.placeholder.com/150" alt="profile" />
+                    <img src="Jay_resized.png" alt="profile" />
                 </div>
                 <div className="info-container">
                     <p>I am a full-stack developer with a passion for creating functional and beautiful websites and applications. I have experience with JavaScript, React, Node.js, and MongoDB. I'm always eager to learn new technologies and expand my skills. In my free time, I enjoy working on personal projects, reading, and spending time with family and friends.</p>
