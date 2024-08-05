@@ -5,24 +5,32 @@ const skillsData = [
   {
     category: 'Programming Languages',
     skills: [
-      { name: 'Python', icon: 'fab fa-python' },
+      { name: 'C++', icon: 'fab fa-c++' },
       { name: 'JavaScript', icon: 'fab fa-js' },
       // Add more programming languages here
     ],
   },
-  {
-    category: 'Frameworks & Libraries',
-    skills: [
-      { name: 'React', icon: 'fab fa-react' },
-      { name: 'Node.js', icon: 'fab fa-node-js' },
-      // Add more frameworks and libraries here
-    ],
-  },
+  // {
+    // category: 'Frameworks & Libraries',
+    // skills: [
+    //   { name: 'React', icon: 'fab fa-react' },
+    //   { name: 'Node.js', icon: 'fab fa-node-js' },
+    //   // Add more frameworks and libraries here
+    // ],
+  // },
   {
     category: 'Tools & Technologies',
     skills: [
       { name: 'Git', icon: 'fab fa-git-alt' },
-      { name: 'Docker', icon: 'fab fa-docker' },
+      { name: 'SnapAR & SparkAR', icon: 'fab fa-ar' },
+      // Add more tools and technologies here
+    ],
+  },
+  {
+    category: 'Others',
+    skills: [
+      { name: 'MySQL', icon: 'fab fa-git-sql' },
+      { name: 'Web API', icon: 'fab fa-api' },
       // Add more tools and technologies here
     ],
   },

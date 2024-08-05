@@ -81,6 +81,9 @@
   }
   
   @media (max-width: 768px) {
+    .about-container {
+      height: auto; /* Adjust height to fit content */
+    }
     .box-container {
       flex-direction: column; 
     }

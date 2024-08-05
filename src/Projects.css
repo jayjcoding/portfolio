@@ -102,7 +102,7 @@
 
   @media (max-width: 768px) {
     .box-container {
-      flex-direction: column; 
+      flex-direction: column;
     }
     
     .video-container, .info-container {

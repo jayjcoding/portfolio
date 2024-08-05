@@ -5,7 +5,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Skills from './Skills';
 import About from './About';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import './App.css'; 
 function App() {
 
@@ -19,6 +19,49 @@ function App() {
   };
 
   const [selectedSection, setSelectedSection] = useState('Home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
+
+  // const closeMenu = () => {
+  //   setIsMenuOpen(false);
+  // };
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
+      let currentSectionId = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100; // Adjust offset as needed
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        // Debugging logs
+        //console.log(`Checking section: ${section.id}`);
+        //console.log(`sectionTop: ${sectionTop}, sectionBottom: ${sectionBottom}, scrollY: ${window.scrollY}`);
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+          currentSectionId = section.id;
+        }
+      });
+
+
+        setSelectedSection(capitalizeFirstLetter(currentSectionId));
+      //console.log(`Current Section: ${currentSectionId}`);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger on mount to set initial state
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
     <div className="App">
       <header>
@@ -35,6 +78,20 @@ function App() {
           onClick={() => setSelectedSection('Contact')}>Contact Me</a>
           <div className='navbar-right'>
             <button className='resume-button' onClick={downloadFile}>Resume</button> 
+          </div>
+        </nav>
+        <nav className="mobile-nav">
+          <div className="hamburger" onClick={toggleMenu}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+          <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+          <a href="#home" onClick={() => { setSelectedSection('Home'); setIsMenuOpen(false); }}>Home</a>
+            <a href="#about" onClick={() => { setSelectedSection('About'); setIsMenuOpen(false); }}>About</a>
+            <a href="#projects" onClick={() => { setSelectedSection('Projects'); setIsMenuOpen(false); }}>Projects</a>
+            <a href="#skills" onClick={() => { setSelectedSection('Skills'); setIsMenuOpen(false); }}>Skills</a>
+            <a href="#contact" onClick={() => { setSelectedSection('Contact'); setIsMenuOpen(false); }}>Contact</a>
           </div>
         </nav>
       </header>
