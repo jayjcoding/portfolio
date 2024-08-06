@@ -86,7 +86,7 @@ body {
   }
 
   .model-container{
-    /*display: none; /*to decide*/
+    display: none; /*to decide*/
     padding-left: 30%;
     height: 40%;
     width: 40%; 

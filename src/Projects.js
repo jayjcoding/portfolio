@@ -10,7 +10,7 @@ function Projects() {
         <iframe
             width="100%"
             height="285"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+            src="https://www.youtube.com/embed/DIAetZLutck?controls=0"
             title="Talk With AI Demo"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -36,7 +36,7 @@ function Projects() {
           <iframe
             width="100%"
             height="285"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+            src="https://www.youtube.com/embed/wqu11vH8BIs?controls=0"
             title="MovieBot Demo"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
